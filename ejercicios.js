@@ -1,4 +1,4 @@
-function crearUsuario() {
+//function crearUsuario() {
     // Crea una función constructor llamada "Usuario"
     // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
     // En el `contructor`, define el usuario, el nombre, el email y la contraseña
@@ -6,8 +6,25 @@ function crearUsuario() {
     // {{nombre}} debe ser el nombre definido en cada instancia
     // Devuelve la clase
     // Tu código:
-  
-  }
+    
+    function Usuario(opciones){
+        opciones = {
+            usuario : '' || 'sin usuario',
+            nombre : '' || 'sin nombre',
+            email : '' || 'sin email',
+            password : '' || 'sin password'
+            
+        }
+            const saludar = function(){
+                return 'hola, mi nombre es' + "usuario"
+            }
+        }
+        
+        var Juan = new Usuario({usuario :'jota', nombre :'juan', email :'email@gmail.com', password :'1234'})
+        console.log(Juan)
+        console.log(Usuario)
+        
+        // todavia no esta terminado
 
 
 
