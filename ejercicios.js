@@ -28,12 +28,24 @@ console.log(Juan)
 
 
 
-  function creaObj() { 
+  //function creaObj() { 
     // Crea una función constructor llamada "datosPersona" y luego crea dos personas nuevas con datos de datosPersona
     // Los datos, son nombre, apellido y dni
     // Tu código:
-  }
+  //}
   
+  function datosPersona(nombre,apellido, DNI){
+      this.nombre = nombre;
+      this.apellido = apellido;
+      this.dni = DNI;
+  }
+  var persona1 = new datosPersona('Juan','Roman','38590958');
+  var persona2 = new datosPersona('luis','lopez','28431932');
+  console.log(persona1);
+  console.log(persona2);
+
+
+
   
   function creaObj2() { 
     // Crea una función constructor llamada "Default" y luego crea dos personas nuevas con datos de datosPersona sin pasarle ningun campo
