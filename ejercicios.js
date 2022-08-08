@@ -47,12 +47,43 @@ console.log(Juan)
 
 
   
-  function creaObj2() { 
+  //function creaObj() { 
+    // Crea una función constructor llamada "datosPersona" y luego crea dos personas nuevas con datos de datosPersona
+    // Los datos, son nombre, apellido y dni
+    // Tu código:
+  //}
+  
+  function datosPersona(nombre,apellido, DNI){
+      this.nombre = nombre || 'sin nombre';
+      this.apellido = apellido || 'sin apellido';
+      this.dni = DNI || 'sin DNI';
+  }
+  const persona1 = new datosPersona('Juan','Roman','38590958');
+  const persona2 = new datosPersona('luis','lopez','28431932');
+  console.log(persona1);
+  console.log(persona2);
+  
+  
+  
+  //function creaObj2() { 
     // Crea una función constructor llamada "Default" y luego crea dos personas nuevas con datos de datosPersona sin pasarle ningun campo
     // Los datos, son nombre, apellido y dni
     // Los datos que deberian mostrarse al acceder a uno de ellos deben ser por deafult, los que ustedes quieran
     // Tu código:
+  //}
+  
+  function Default(){
+      this.nombre = 'ingrese un nombre'
+      this.apellido = 'ingrese un apellido'
+      this.dni = 'ingrese un DNI'
   }
+  const persona3 = new Default();
+  const persona4 = new Default();
+  console.log (persona3)
+  console.log (persona4)
+
+
+
   
   function Computador() { 
     // Deben crear una funcion constructora
