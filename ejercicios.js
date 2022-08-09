@@ -77,3 +77,32 @@ function Default(){
 // Los datos de la computadora deben guardarse dentro de otra variable y mostrar esa persona para ver los datos.
 // Tu código:
 //}
+
+
+function Computador(id, marca,procesador,ram,ssd) {
+this.id = id;
+this.marca = marca
+this.procesador = procesador
+this.ram = ram
+this.ssd = ssd
+this.inicio = function() {
+return 'Iniciando PC';
+
+}
+this.datosdePC = function(){
+this.id = id;
+this.marca = marca
+this.procesador = procesador
+this.ram = ram
+this.ssd = ssd
+var datosPC = [id,marca,procesador,ram,ssd]
+return 'los datos de la PC son ' + datosPC
+}
+}
+
+const intel = new Computador('PCcasa','Intel','i7','DDR5-8Gb','Kingstone - 960Gb');
+
+
+console.log(intel.inicio());
+console.log(intel.datosdePC())
+
