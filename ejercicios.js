@@ -90,11 +90,6 @@ return 'Iniciando PC';
 
 }
 this.datosdePC = function(){
-this.id = id;
-this.marca = marca
-this.procesador = procesador
-this.ram = ram
-this.ssd = ssd
 var datosPC = [id,marca,procesador,ram,ssd]
 return 'los datos de la PC son ' + datosPC
 }
